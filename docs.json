@@ -82,6 +82,10 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Setup Guides",
+        "icon": "book"
       }
     ]
   },
