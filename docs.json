@@ -81,7 +81,14 @@
           },
           {
             "group": "Games",
-            "pages": []
+            "pages": [
+              {
+                "group": "Rainbow Six",
+                "pages": [
+                  "inferno"
+                ]
+              }
+            ]
           }
         ]
       }
