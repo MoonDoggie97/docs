@@ -1,12 +1,8 @@
----
-title: "Inferno"
----
-
 > ## Documentation Index
 > Fetch the complete documentation index at: https://docs.noblecheats.net/llms.txt
 > Use this file to discover all available pages before exploring further.
 
-# Inferno
+# Vega
 
 > This guide is split into easy step-by-step sections for a smooth and successful setup.
 
@@ -70,20 +66,25 @@ title: "Inferno"
   <Step title="Downloading the Cheat">
     ## Cheat Loader Download
 
-    1. Download the loader: [https://uniqueloader.com/r6s/](https://uniqueloader.com/r6s/)
-    2. Extract the files from the archive and place them in a separate folder. The folder name should be written in English letters, it is recommended to place this folder in the root of the C drive.
+    You can download the cheat from the link below:
+
+    [https://mega.nz/folder/OAkhFCbJ#X0bbzcy5PFIiOJOWnuQyog](https://mega.nz/folder/OAkhFCbJ#X0bbzcy5PFIiOJOWnuQyog)
   </Step>
 
   <Step title="Injecting the Cheat">
     ## Loading/Injecting
 
-    1. Run the cheat loader as administrator.
-    2. Insert your key into the "Serial Key" field and click "Sign In".
-    3. Click the "Start Injection Process" button.
-    4. The message "Please Open Rainbow Six Siege" will appear, it's time to launch the game. (*YOUR GAME NEEDS TO BE SET TO BORDERLESS MODE*)
+    1. Register an account, sign in and activate your key.
+    2. Press the Load button. A pop-up will appear that asks you to reboot your machine.
+    3. After you rebooted, you will need to open the loader and login again.
+    4. Now Press Load for the second time.
 
-    * When the game starts, press the **"Insert"** key while in the main menu.
-    * The cheat menu will appear in front of you.
+    If everything went as expected, the loader should close itself now. It wouldn't be normal if the loader stays open!
+
+    5. You can now Start your Game. **Make sure your game is set to Borderless Window Mode!**
+
+    * First time loading the cheat time will take up to 10 Minutes depending on your internet speed. Don't close the game in the meantime!
+    * Menu Key is **INSERT**
   </Step>
 </Steps>
 
@@ -97,30 +98,36 @@ title: "Inferno"
     2. Connect to Warp then try to launch the loader!
   </Accordion>
 
-  <Accordion title="Driver Initialization Error 1">
-    1. First Option: \
-       Relaunch loader, then press on "**get support**"\
-       then press "**1**" and then press "**2**"
-    2. Second Option: \
-       Disable "**Memory Integrity**" and "**Vulnerable Driver Blocklist**" under Core Isolation.\
-       Then go to Registry Editor:
+  <Accordion title="Loader keeps wanting to restart PC?">
+    Usual problems that causes this:
 
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config`\
-    Delete everything except the "default" key.
+    1. Multiple Windows installs
+    2. A second bugged EFI partition being around somewhere
+    3. Some Laptops don't like it and in the restart process you will be stuck in a black screen (Rare case)
+
+    If you have Nr. 1 physically unplug the other windows drive.
+
+    If you have Nr. 2 then you can either erase the partition (needs IT knowledge) or do a windows reinstall.
+
+    If you have Nr. 3 Contact Support
   </Accordion>
 
-  <Accordion title="ESP Lag">
-    Switch screen mode to "**Borderless**" or "**Windowed**" in the game settings.
+  <Accordion title="Crashing/Loader not starting">
+    Run CMD as admin and run these commands seperately one by one: \
+    `Dism /Online /Cleanup-Image /ScanHealth`
+
+    `Dism /Online /Cleanup-Image /RestoreHealth`
+
+    `sfc /scannow`
   </Accordion>
 
-  <Accordion title="Problems with Launching/Injection">
-    Download this file:
+  <Accordion title="HVCI Issues">
+    Launch CMD as Admin, type in these Commands: \
+    `bcdedit /set hypervisorlaunchtype off`
 
-    [https://mega.nz/file/uURS0ZgL#gn9i\_rBW\_\_80V9uzexA\_Cr2vPUPNGQK2aif4qtevXHs](https://mega.nz/file/uURS0ZgL#gn9i_rBW__80V9uzexA_Cr2vPUPNGQK2aif4qtevXHs)
+    `"reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f"`
 
-    Run it and restart your PC.
-
-    Disable Kernel Isolation and Vulnerable Driver Blocking in Windows Defender.
+    `"reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v EnableVirtualizationBasedSecurity /t REG_DWORD /d 1 /f"`
   </Accordion>
 </AccordionGroup>
 
