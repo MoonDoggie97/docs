@@ -71,7 +71,19 @@
       },
       {
         "tab": "Setup Guides",
-        "icon": "book"
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Choose your Game",
+            "pages": [
+              "select-a-game"
+            ]
+          },
+          {
+            "group": "Games",
+            "pages": []
+          }
+        ]
       }
     ]
   },
