@@ -1,0 +1,139 @@
+---
+title: "Shadow"
+---
+
+> This guide is split into easy step-by-step sections for a smooth and successful setup.
+
+<Warning>
+  Please follow all instructions carefully. Skipping steps may cause the setup to fail.
+</Warning>
+
+<Check>
+  **TIP:** To keep things as safe as possible, rely mostly on ESP and only use the more obvious features here and there.
+</Check>
+
+---
+
+<Steps>
+  <Step title="Getting Started">
+    ## Disable Windows Defender
+
+    <Card title="Why is this needed?" icon="shield">
+      Antivirus often flags game cheats as suspicious because they inject code or modify games to enable features like aimbot or ESP. This is normal behavior for all cheat software - not a sign that Noble Cheats is unsafe.
+    </Card>
+
+    1. Open Windows Security
+    2. Go to **Virus & threat protection** \> **Manage settings**
+    3. Turn off all protection settings:
+
+    <img
+      src="https://i.postimg.cc/kX0J3HYB/RYv-JIe2.png"
+      alt="Virus & threat protection settings"
+      width="375"
+    />
+
+    4. Go to **App & browser control** \> **Exploit protection settings**
+    5. Select **"off by default"** for each option
+
+    <img
+      src="https://i.postimg.cc/rFBVXHZd/vm-OLX3Y.png"
+      alt="Exploit protection settings"
+      width="375"
+    />
+
+    6. Go to **App & browser control** \> **Reputation-based protection settings**
+    7. Turn off all options
+
+    <img
+      src="https://i.postimg.cc/bN7yc5Vv/OK8gw-Jh.png"
+      alt="Reputation-based protection settings"
+      width="375"
+    />
+
+    8. Go to **Device security** \> **Core isolation**
+    9. Turn off **Memory integrity**
+
+    <img
+      src="https://i.postimg.cc/Kv6GSWp4/Rk-GSZBg.png"
+      alt="Memory integrity settings"
+      width="375"
+    />
+
+    ### Using DControl
+
+    If Windows Defender keeps re-enabling, use DControl:
+
+    1. Download [WinRar](https://www.win-rar.com/download.html?&L=0) and install it. _(Needed to extract archives)_
+    2. Download [DControl](https://www.sordum.org/files/downloads.php?st-defender-control)
+    3. Extract the .rar archive with password **"sordum"**
+    4. Open DControl then press **"Disable Windows Defender"**
+
+    <img
+      src="https://i.postimg.cc/sDkjdLHM/D5389nf.png"
+      alt="DControl interface"
+      width="375"
+    />
+
+    ### Required Files
+
+    [https://www.microsoft.com/en-us/download/details.aspx?id=35](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+
+    [https://aka.ms/vs/17/release/vc\_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+  </Step>
+  <Step title="Downloading the Cheat">
+    ## Cheat Loader Download
+
+    1. Download the loader: [https://uniqueloader.com/r6s/](https://uniqueloader.com/r6s/)
+    2. Extract the files from the archive and place them in a separate folder. The folder name should be written in English letters, it is recommended to place this folder in the root of the C drive.
+  </Step>
+  <Step title="Injecting the Cheat">
+    ## Loading/Injecting
+
+    1. Run the cheat loader as administrator.
+    2. Insert your key into the "Serial Key" field and click "Sign In".
+    3. Click the "Start Injection Process" button.
+    4. The message "Please Open Rainbow Six Siege" will appear, it's time to launch the game. (_YOUR GAME NEEDS TO BE SET TO BORDERLESS MODE_)
+
+    - When the game starts, press the **"Insert"** key while in the main menu.
+    - The cheat menu will appear in front of you.
+  </Step>
+</Steps>
+
+---
+
+## Common Errors
+
+<AccordionGroup>
+  <Accordion title="Loader Connection Issues?">
+    1. Download: [Cloudflare Warp](https://one.one.one.one/)
+    2. Connect to Warp then try to launch the loader!
+  </Accordion>
+
+  <Accordion title="Driver Initialization Error 1">
+    1. First Option: \
+       Relaunch loader, then press on "**get support**"\
+       then press "**1**" and then press "**2**"
+    2. Second Option: \
+       Disable "**Memory Integrity**" and "**Vulnerable Driver Blocklist**" under Core Isolation.\
+       Then go to Registry Editor:
+
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config`\
+    Delete everything except the "default" key.
+  </Accordion>
+
+  <Accordion title="ESP Lag">
+    Switch screen mode to "**Borderless**" or "**Windowed**" in the game settings.
+  </Accordion>
+
+  <Accordion title="Problems with Launching/Injection">
+    Download this file:
+
+    [https://mega.nz/file/uURS0ZgL#gn9i\_rBW\_\_80V9uzexA\_Cr2vPUPNGQK2aif4qtevXHs](https://mega.nz/file/uURS0ZgL#gn9i_rBW__80V9uzexA_Cr2vPUPNGQK2aif4qtevXHs)
+
+    Run it and restart your PC.
+
+    Disable Kernel Isolation and Vulnerable Driver Blocking in Windows Defender.
+  </Accordion>
+</AccordionGroup>
+
+---

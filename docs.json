@@ -29,6 +29,61 @@
                   "inferno-r6",
                   "vega-r6"
                 ]
+              },
+              {
+                "group": "Arc Raiders",
+                "pages": [
+                  "Fecurity-ar",
+                  "Arcane-ar"
+                ]
+              },
+              {
+                "group": "ABI",
+                "pages": [
+                  "shadow-abi"
+                ]
+              },
+              {
+                "group": "Fortnite",
+                "pages": [
+                  "Arcane-fn"
+                ]
+              },
+              {
+                "group": "Marvel Rivals",
+                "pages": [
+                  "shadow-mr"
+                ]
+              },
+              {
+                "group": "PubG",
+                "pages": [
+                  "arcane-pg"
+                ]
+              },
+              {
+                "group": "Apex",
+                "pages": [
+                  "arcane-ap"
+                ]
+              },
+              {
+                "group": "Rust",
+                "pages": [
+                  "Mason-ru"
+                ]
+              },
+              {
+                "group": "Escape From Tarkov",
+                "pages": [
+                  "Mason-eft"
+                ]
+              },
+              {
+                "group": "DayZ",
+                "pages": [
+                  "Arcane-dz"
+                ]
               }
             ]
           }
