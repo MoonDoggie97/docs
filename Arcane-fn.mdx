@@ -8,51 +8,143 @@ title: "Arcane "
   Please follow all instructions carefully. Skipping steps may cause the setup to fail.
 </Warning>
 
+<Check>
+  **IMPORTANT:** All cheat software carries inherent risk. Use at your own discretion.
+</Check>
+
 ---
 
 <Steps>
-  <Step title="Purchase & Setup">
-    ## 1️⃣ After Purchase
+  <Step title="Important Information">
+    ## ⚠️ Before You Start
 
-    Once you've completed your payment, you will receive:
-    - A **license key** to activate the product  
-    - A **download link** for the cheat loader  
+    - "Undetected" status does **not** guarantee 100% ban safety
+    - Never use this cheat on your **main account**
+    - After any game update, wait until the cheat is updated
+    - You are solely responsible for your usage
+  </Step>
+  <Step title="Initial Setup">
+    ## Pre-Setup (Before Key Activation)
 
-    ## 2️⃣ Prepare Your System
+    ### Required Installation
 
-    Before launching the loader, make sure your system is ready:
+    - Install Microsoft Visual C\+\+ Redistributable:\
+      [https://aka.ms/vs/17/release/vc\_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+    - Restart your PC after installation (**mandatory**)
 
-    - Disable all antivirus software and **Windows Defender**  
-    - These security tools can block the cheat from launching or functioning properly  
+    ### Disable Conflicting Software
 
-    ## 3️⃣ Run the Loader
+    Make sure you are **NOT using**:
 
-    Once the file is downloaded:
+    - Third-party antivirus programs (uninstall them)
+    - Windows Defender (**disable**)
+    - Windows SmartScreen (**disable**)
+    - FaceIt Anti-Cheat
+    - Riot Vanguard (Valorant Anti-Cheat)
 
-    - Right-click the file and choose **Run as administrator**  
-    - Ensure antivirus protection remains disabled during this process  
-    - On first launch, the process may take **2–7 minutes** — be patient  
+    ### GPU Requirements
 
-    ## 4️⃣ Activate Your Key
+    **NVIDIA Users:**  Install NVIDIA App: [https://www.nvidia.com/en-us/software/nvidia-app/](https://www.nvidia.com/en-us/software/nvidia-app/)\
+     Log in and update to the latest drivers\
+     Enable **NVIDIA Overlay**
 
-    After the loader opens:
+    **AMD Users:**  Install AMD Software: Adrenalin Edition (**NOT PRO**)\
+     Update to the latest drivers\
+     Enable **In-Game Overlay**\
+     In Performance tab, enable **Performance Metrics Display**
 
-    - Click the **"Activation key"** button  
-    - Enter the license key you received after purchase  
+    ### BIOS Requirement
 
-    ## 5️⃣ Select the Game & Load
+    - Enter BIOS and disable **Intel Rapid Storage Technology**
+    - Restart your PC again before continuing
+  </Step>
+  <Step title="Loader Setup">
+    ##  Loader Setup & Activation
 
-    - Make sure the game is completely **closed**  
-    - Select your game from the list  
-    - Click **Load**  
+     Place the loader in a dedicated folder\
+     Run the loader as **Administrator**\
+     If the loader updates, re-run it\
+     Enter your license key
 
-    ## 6️⃣ Start the Game & Use the Cheat
+    - Right-click in CMD to paste
+    - Press **Enter**
 
-    - When prompted, launch the game  
-    - The cheat will initialize automatically  
+    ### When Prompted:
 
-    - Press **Insert** to open/close the menu at any time  
+    - Press **Yes** to clean traces
+    - Press **Yes** to enable HWID Spoofer
+    - The loader will auto-close when finished
+    - You can now launch the game
+  </Step>
+  <Step title="Menu Access">
+    ##  Menu Access Per Game
 
+    - The menu appears automatically in-game
+
+    ### Keybinds:
+
+    - **Unturned** → `DEL`
+    - **PUBG** → `INSERT` _(only visible in match, not lobby — use arrow keys)_
+    - **Other Games** → `INSERT` / `HOME`
+    - **Unload Cheat** → `END`
+  </Step>
+  <Step title="Common Errors">
+    ##  Common Errors & Fixes
+
+    ###  Loader Closes Instantly
+
+    - Reinstall: [https://aka.ms/vs/17/release/vc\_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+    ### 🖱️ Menu Not Clickable
+
+    - Run Steam as **non-administrator**
+    - Ensure only NVIDIA/AMD overlays are enabled
+    - Run overlay software as **administrator**
+
+    ### 🧱 Visuals Not Working / Menu Disappears
+
+    - Game may be patched → wait for update
+    - Verify game files (full reinstall recommended)
+    - Still not working → contact support
+
+    ### 🛑 Antivirus Warning
+
+    - Fully uninstall third-party antivirus (Windows 10/11)
+    - Disable **Real-time Protection** and **SmartScreen**
+
+    **Windows 11 Fix:**  Download: [https://disk.yandex.ru/d/5slbv4S2AL1M0w](https://disk.yandex.ru/d/5slbv4S2AL1M0w)\
+     Run `Turn_ON.reg` → Restart\
+     Run `Turn_OFF.reg` → Restart again
+  </Step>
+  <Step title="Advanced Errors">
+    ##  BIOS / Hardware Errors
+
+    ### Common Issues & Fixes
+
+    - **AES instruction set not supported**\
+      → CPU unsupported (contact support)
+    - **Intel VT-X not enabled**\
+      → Enable **Intel Virtualization Technology (VT-X)** in BIOS
+    - **AMD-V not enabled**\
+      → Enable **SVM Mode / AMD-V** in BIOS
+    - **Secure Boot must be disabled**\
+      → Disable Secure Boot in BIOS
+    - **Unsupported firmware**\
+      → Convert disk to GPT (mbr2gpt or disk utility)
+    - **Secure Boot keys invalid**\
+      → Enable Secure Boot → reboot → disable again
+    - **VMX/SVM not supported**\
+       Disable **Hyper-V** & **Virtual Machine Platform** in Windows Features\
+       Run CMD as admin:\
+      `bcdedit /set hypervisorlaunchtype off`\
+       Restart PC
+    - **Incorrect HWID**\
+      Run in CMD (admin):
+      ```text
+      wmic diskdrive get Caption, SerialNumber
+      wmic baseboard get SerialNumber
+      ```
+      - If commands fail → reinstall Windows
   </Step>
 </Steps>
 
