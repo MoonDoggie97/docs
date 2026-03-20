@@ -31,15 +31,14 @@
                 ]
               }
             ]
-          },
-          "index"
+          }
         ]
       }
     ]
   },
   "redirects": [
   {
-    "source": "/",
+    "source": "/index/",
     "destination": "/selectagame/"
   }
   ],
