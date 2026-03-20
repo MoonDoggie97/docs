@@ -36,7 +36,11 @@
       }
     ]
   },
-  "logo": "/images/Adobe_Express_-_file_1.png",
+  "logo": {
+    "light": "/images/Adobe_Express_-_file_1.png",
+    "dark": "/images/Adobe_Express_-_file_1.png",
+    "href": "/selectagame"
+  },
   "navbar": {
     "links": [],
     "primary": {
