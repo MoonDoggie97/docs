@@ -37,6 +37,12 @@
       }
     ]
   },
+  "redirects": [
+  {
+    "source": "/",
+    "destination": "/selectagame/"
+  }
+  ],
   "logo": {
     "light": "/images/Adobe_Express_-_file_1.png",
     "dark": "/images/Adobe_Express_-_file_1.png",
