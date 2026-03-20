@@ -13,11 +13,11 @@
       {
         "tab": "Setup Guides",
         "icon": "book",
-        "groups": [
+        "pages": [
           {
             "group": "Choose your Game",
             "pages": [
-              ""
+              "selectagame"
             ]
           },
           {
@@ -31,7 +31,8 @@
                 ]
               }
             ]
-          }
+          },
+          "index"
         ]
       }
     ]
