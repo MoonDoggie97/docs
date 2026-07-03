@@ -32,8 +32,7 @@
               {
                 "group": "Arc Raiders",
                 "pages": [
-                  "Fecurity-ar",
-                  "Arcane-ar"
+                  "Fecurity-ar"
                 ]
               },
               {
@@ -46,12 +45,6 @@
                 "group": "Fortnite",
                 "pages": [
                   "Arcane-fn"
-                ]
-              },
-              {
-                "group": "Marvel Rivals",
-                "pages": [
-                  "shadow-mr"
                 ]
               },
               {
@@ -69,19 +62,13 @@
               {
                 "group": "Rust",
                 "pages": [
-                  "Mason-ru"
+                  "Disconnect-ru"
                 ]
               },
               {
                 "group": "Escape From Tarkov",
                 "pages": [
                   "Mason-eft"
-                ]
-              },
-              {
-                "group": "DayZ",
-                "pages": [
-                  "Arcane-dz"
                 ]
               }
             ]
