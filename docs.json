@@ -24,21 +24,27 @@
             "group": "Games",
             "pages": [
               {
-                "group": "Rainbow Six",
-                "pages": [
-                  "inferno-r6"
-                ]
-              },
-              {
                 "group": "Arc Raiders",
                 "pages": [
                   "Fecurity-ar"
                 ]
               },
               {
+                "group": "Apex",
+                "pages": [
+                  "arcane-ap"
+                ]
+              },
+              {
                 "group": "ABI",
                 "pages": [
                   "fecurity-abi"
+                ]
+              },
+              {
+                "group": "Escape From Tarkov",
+                "pages": [
+                  "Mason-eft"
                 ]
               },
               {
@@ -54,21 +60,15 @@
                 ]
               },
               {
-                "group": "Apex",
-                "pages": [
-                  "arcane-ap"
-                ]
-              },
-              {
                 "group": "Rust",
                 "pages": [
                   "Disconnect-ru"
                 ]
               },
               {
-                "group": "Escape From Tarkov",
+                "group": "Rainbow Six",
                 "pages": [
-                  "Mason-eft"
+                  "inferno-r6"
                 ]
               }
             ]
