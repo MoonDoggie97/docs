@@ -36,9 +36,21 @@
                 ]
               },
               {
+                "group": "Apex",
+                "pages": [
+                  "arcane-ap"
+                ]
+              },
+              {
                 "group": "ABI",
                 "pages": [
                   "fecurity-abi"
+                ]
+              },
+              {
+                "group": "Escape From Tarkov",
+                "pages": [
+                  "Mason-eft"
                 ]
               },
               {
@@ -63,6 +75,12 @@
                 "group": "Rust",
                 "pages": [
                   "Disconnect-ru"
+                ]
+              },
+              {
+                "group": "Rainbow Six",
+                "pages": [
+                  "inferno-r6"
                 ]
               },
               {
