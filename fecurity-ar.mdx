@@ -2,8 +2,6 @@
 title: "Fecurity"
 ---
 
-This guide is divided into different sections so make sure to follow the instructions carefully for a successful setup.
-
 ### Pre-Setup Instructions
 
 <Tabs>
@@ -22,15 +20,7 @@ This guide is divided into different sections so make sure to follow the instruc
   <Tab title="Windows Defender">
     Because software executables (.exe) modify or inject code into games to enable features like ESP, they cannot be officially verified by Microsoft. As a result, Windows Defender often flags the launcher. For this reason, it may be necessary to temporarily disable Windows Defender.
 
-    <Info>
-      If you have any concerns, you can review feedback from other users on our [Trustpilot page](http://trustpilot.com/review/hazcheats.com).
-    </Info>
-
     **How to Disable Windows Defender (Efficiently):** Install **dControl**, a tool that allows you to easily turn Windows Defender on or off.
-
-    <Tip>
-      The password to extract the file is: **HAZ**
-    </Tip>
 
     _A video walkthrough will be available soon._
 
@@ -59,7 +49,7 @@ This guide is divided into different sections so make sure to follow the instruc
 
     **Requirements:** Ensure the following configurations are applied:
 
-    - **Enable** Virtualization
+    - **Enable** Virtualization (SVM / VT-x)
     - **Disable** Secure Boot
     - **Disable** Fast Boot
 
@@ -85,23 +75,14 @@ This guide is divided into different sections so make sure to follow the instruc
     1. Download the Windows Media Creation Tool for Windows 10 or Windows 11.
     2. Launch the tool and follow the prompts.
     3. When prompted to choose media, select **ISO file**.
-
-    ![Windows ISO Setup](https://3733328038-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXLbPEl7L2saIrTjZharN%2Fuploads%2F71t5xmX3mNioJ4vl9VYa%2Fimage.png?alt=media&token=9b61f9bb-d41e-4c92-94f7-d05473b2a8ac)
-
-    4. Once the ISO file is created, download [**Rufus**](https://rufus.ie/en/).
+    4. Once the ISO file is created, download **Rufus**.
     5. Open Rufus and configure the following:
        - **Partition scheme:** GPT
        - **Target system:** UEFI (non-CSM)
-
-    ![Rufus Setup](https://3733328038-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXLbPEl7L2saIrTjZharN%2Fuploads%2F1N0AcDyVYNbtl60kyCwG%2Fimage.png?alt=media&token=ba843b84-5dc2-414a-81b6-e973c1116dea)
-
     6. Once completed, enter your BIOS/UEFI settings.
        - Navigate to the **Boot** tab
        - Locate **CSM (Compatibility Support Module)**
        - Set it to **Disabled**
-
-    ![CSM Disabled](https://3733328038-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXLbPEl7L2saIrTjZharN%2Fuploads%2FvxhFehv40tNkDonb4xP1%2Fimage.png?alt=media&token=cf526a35-b81b-4b42-9678-178f2ce63042)
-
     7. Boot from your USB drive and begin the Windows installation.
        - Delete existing partitions (if required)
        - Install Windows in **UEFI mode**
@@ -120,16 +101,18 @@ This guide is divided into different sections so make sure to follow the instruc
   <Step title="Install Launcher">
     Download and install the latest version of the launcher to begin setup.
 
-    [Download Launcher Here](https://mega.nz/folder/zc8hXK7Y#IIIbhuCLlHe4CGRIVbErSw)
+    <Card title="Download Launcher" icon="download" href="https://mega.nz/folder/nRUWiKoI#RSfQ5Bh9oSBWpRhnvLxm7g">
+      Click here to download the setup files.
+    </Card>
   </Step>
   <Step title="Extract Files">
-    Use [WinRAR](https://www.win-rar.com/download.html) (or a similar tool) to extract the downloaded file.
+    Use WinRAR (or a similar tool) to extract the downloaded file.
   </Step>
   <Step title="Launch the Software">
     Open the `Builds` folder and run the launcher that is suitable for you as administrator.
   </Step>
   <Step title="System Restart">
-    After entering your license key, your PC will restart. This is expected.
+    After entering your license key, your PC will restart. This is expected and required to load the environment.
   </Step>
   <Step title="Enter the Game">
     Once your system has restarted successfully, launch the game.
@@ -150,7 +133,7 @@ Below is a variety of common errors. Expand the sections below to find the appro
   <Accordion title="Program Already Launched">
     **Solution 1**
 
-    1. Download [EasyUEFI](https://www.easyuefi.com/index-us.html).
+    1. Download EasyUEFI.
     2. Open **Manage EFI Boot Option**
     3. Check your disks and set the one with the file path `EFI\Microsoft\Boot\bootmgfw.efi` as the top priority by using the first button.
     4. Reboot your PC and try running the program again.
@@ -168,14 +151,10 @@ Below is a variety of common errors. Expand the sections below to find the appro
   </Accordion>
 
   <Accordion title="Blue Screen or PC Freezes After Launching the Game">
-    1. Follow the guide here to use custom launch options.
+    1. Use custom launch options for your loader environment.
     2. Add the following launch option: `-delay 120000`
-
-    ![Batch Format](https://3733328038-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXLbPEl7L2saIrTjZharN%2Fuploads%2FQhoLxpnCdrJhJFmdmKNv%2Fimage.png?alt=media&token=b4a5aa61-7bf3-4655-9abc-e5f2de31b1ea)
-
-    _Replace LAUNCHER.exe with the correct file name_
-
-    3. If the issue persists, contact the support team.
+    3. Replace `LAUNCHER.exe` inside your execution settings or script with the correct file name.
+    4. If the issue persists, contact the support team.
   </Accordion>
 
   <Accordion title="Blue Screen on Boot: DPC_WATCHDOG_VIOLATION">
@@ -207,8 +186,8 @@ Below is a variety of common errors. Expand the sections below to find the appro
     3. Disable **Fast Boot**.
   </Accordion>
 
-  <Accordion title="More Error Codes">
-    **0x86000001** — Usually means the CPU is outdated — CPU Not Supported. Only standard INTEL & AMD CPU vendors are supported.
+  <Accordion title="More Error Codes (0x86...)">
+    **0x86000001** — Usually means the CPU is outdated -\> CPU Not Supported. Only standard INTEL & AMD CPU vendors are supported.
 
     ---
 
@@ -223,7 +202,7 @@ Below is a variety of common errors. Expand the sections below to find the appro
 
     ---
 
-    **0x86880004** — Your SVM & NX (Virtualization) mode are not enabled in BIOS.
+    **0x86880004** — Your SVM / NX (Virtualization) mode is not enabled in BIOS.
 
     ---
 

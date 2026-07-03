@@ -26,19 +26,13 @@
               {
                 "group": "Arc Raiders",
                 "pages": [
-                  "Fecurity-ar"
+                  "fecurity-ar"
                 ]
               },
               {
                 "group": "Apex",
                 "pages": [
-                  "arcane-ap"
-                ]
-              },
-              {
-                "group": "Apex",
-                "pages": [
-                  "arcane-ap"
+                  "fecurity-apex"
                 ]
               },
               {
@@ -50,7 +44,7 @@
               {
                 "group": "Escape From Tarkov",
                 "pages": [
-                  "untitled-page"
+                  "fecurity-eft"
                 ]
               },
               {
@@ -74,7 +68,7 @@
               {
                 "group": "Rainbow Six",
                 "pages": [
-                  "untitled-page"
+                  "fecurity-r6"
                 ]
               }
             ]
