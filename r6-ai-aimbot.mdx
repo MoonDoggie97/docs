@@ -7,47 +7,15 @@ icon: "crosshairs"
 
 Full setup guide for the FlickLabz **R6 AI-Aim**. Pure AI-driven aim with recoil control, triggerbot and smart weapon detection. The AI-Aim is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window, captures the screen with the GPU, runs on-device YOLO inference through DirectML, and drives the mouse through a signed kernel-level mouse driver. Follow each step in order.
 
-## Pre-Setup Instructions
+## Pre-Setup Requirements
 
-### C++ Runtime Components
-
-The software uses C++ and DirectX 11 to render the overlay and run on-GPU AI inference. Install the Microsoft C++ Runtime Components:
-
-> This is a standard Microsoft component used by many applications. Installing it ensures everything runs smoothly.
-
-**Install both:**
-
-- [vc_redist.x86](https://aka.ms/vs/17/release/vc_redist.x86.exe)
-- [vc_redist.x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-
----
-
-### GPU Requirements
+### GPU
 
 The AI model runs through DirectML on your GPU. Any modern **DirectX 12 capable GPU** works (NVIDIA 10-series or newer, AMD RX 500 or newer, Intel Arc). Integrated graphics are supported but inference will be slower.
 
-> First launch JIT-compiles DML shader kernels for the YOLO model, which can take **10–20 seconds** on cold runs. A centered "AI model loading..." banner stays on screen until the model is ready.
+> First launch JIT-compiles DirectML shader kernels for the YOLO model, which can take **10–20 seconds** on cold runs. A centered "AI model loading..." banner stays on screen until the model is ready.
 
 ---
-
-### Windows Defender
-
-Because the software installs a kernel-level mouse driver and loads an encrypted AI model, Windows Defender may flag the exe. Temporarily disable Defender before first launch.
-
-**Recommended tool:** [Defender Control v2.1](https://www.sordum.org/9480/defender-control-v2-1/)
-
----
-
-### Anti-Cheats
-
-Some anti-cheats keep running in the background even when their game is closed. Remove these before launching:
-
-- FACEIT
-- Riot Vanguard
-
----
-
-> **WARNING:** Complete all requirements above before launching.
 
 ## Step by Step Guide
 
@@ -233,7 +201,7 @@ Press **Delete** at any time to immediately close the software. A dedicated watc
 </Accordion>
 
 <Accordion title="Driver Initialization Failed">
-  Repeat the Windows Defender step, then relaunch. The exe auto-cycles the mouse-driver service to clear a stale channel. If it still fails, restart Windows.
+  Relaunch — the exe auto-cycles the mouse-driver service to clear a stale channel. If it still fails, restart Windows.
 </Accordion>
 
 <Accordion title="After a long time since last open, PC restart required">

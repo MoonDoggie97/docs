@@ -7,20 +7,7 @@ icon: "bullseye"
 
 Full setup guide for the FlickLabz R6 **AIO** (all-in-one) package. The AIO is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window and uses a signed kernel-level mouse driver for mouse movement. Follow each step in order.
 
-## Pre-Setup Instructions
-
-### C++ Runtime Components
-
-The software uses C++ and DirectX 11 to render its overlay window. Install the Microsoft C++ Runtime Components:
-
-> This is a standard Microsoft component used by many applications. Installing it ensures everything runs smoothly.
-
-**Install both:**
-
-- [vc_redist.x86](https://aka.ms/vs/17/release/vc_redist.x86.exe)
-- [vc_redist.x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-
----
+## Pre-Setup Requirements
 
 ### Enemy Color (REQUIRED for aim)
 
@@ -36,27 +23,6 @@ The AIO Aim acquires targets by their outline color. **Enemy outlines must be se
 > If enemies are blue, yellow, green or any other color, the Aim cannot see them. This is the single most common "aim doesn't work" cause.
 
 ---
-
-### Windows Defender
-
-Because the software installs a kernel-level mouse driver, Windows Defender may flag the launcher. Temporarily disable Defender before first launch.
-
-**Recommended tool:** [Defender Control v2.1](https://www.sordum.org/9480/defender-control-v2-1/) — toggle Defender on and off with one click.
-
----
-
-### Anti-Cheats
-
-Some anti-cheats keep running in the background even when their game is closed and can block the software from launching.
-
-**Anti-Cheats to uninstall:**
-
-- FACEIT
-- Riot Vanguard
-
----
-
-> **WARNING:** Complete all requirements above (including enemy color = red) before launching.
 
 ## Step by Step Guide
 
@@ -105,7 +71,7 @@ Press **Delete** at any time to immediately close the software and all its featu
 </Accordion>
 
 <Accordion title="Driver Initialization Failed">
-  Repeat the Windows Defender step from the pre-setup requirements and launch again. The software auto-recovers a stale driver without a reboot on most startups.
+  Relaunch the exe — the software auto-recovers a stale driver without a reboot on most startups.
 </Accordion>
 
 <Accordion title="Cannot Connect to Server">
