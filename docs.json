@@ -68,7 +68,9 @@
               {
                 "group": "Rainbow Six",
                 "pages": [
-                  "Inferno-r6"
+                  "Inferno-r6",
+                  "r6-aio",
+                  "r6-ai-aimbot"
                 ]
               }
             ]
