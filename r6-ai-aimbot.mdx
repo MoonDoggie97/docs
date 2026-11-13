@@ -5,7 +5,7 @@ description: "FlickLabz Rainbow Six Siege AI-Aim — full setup guide"
 icon: "crosshairs"
 ---
 
-Full setup guide for the FlickLabz **R6 AI-Aim**. Pure AI-driven aim with recoil control, triggerbot and smart weapon detection. The AI-Aim is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window, captures the screen with the GPU, runs on-device YOLO inference through DirectML, and drives the mouse through a signed kernel-level mouse driver (ZDrv). Follow each step in order.
+Full setup guide for the FlickLabz **R6 AI-Aim**. Pure AI-driven aim with recoil control, triggerbot and smart weapon detection. The AI-Aim is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window, captures the screen with the GPU, runs on-device YOLO inference through DirectML, and drives the mouse through a signed kernel-level mouse driver. Follow each step in order.
 
 ## Pre-Setup Instructions
 
@@ -57,7 +57,7 @@ Download the latest `FlickLabz R6 AI-Aim.exe` from your dashboard.
 
 ### Step 2: Run as Administrator
 
-Right-click `FlickLabz R6 AI-Aim.exe` → **Run as administrator**. Elevation is required so the ZDrv kernel driver can be installed and started.
+Right-click `FlickLabz R6 AI-Aim.exe` → **Run as administrator**. Elevation is required so the kernel-level mouse driver can be installed and started.
 
 ### Step 3: Sign In
 
@@ -67,7 +67,7 @@ Enter your license credentials in the login window. The desktop app will show an
 
 On first launch the exe will:
 
-1. Install and start the ZDrv kernel driver.
+1. Install and start the kernel-level mouse driver.
 2. Fetch your encrypted AI model from the server.
 3. Warm up the DirectML inference pipeline (20 iterations, ~10–20 seconds).
 
@@ -207,7 +207,7 @@ Interface + inference backend.
 | **RMB** | Default aim key (configurable) |
 | **F1**  | Trigger Smart Switch scan burst |
 | **F8**  | Dump current AI input to `ai_sees.bmp` |
-| **F9** | Cursor / foreground diagnostic (written to `AimBot.log`) |
+| **F9** | Cursor / foreground diagnostic (written to log) |
 | **DEL** | Panic exit — instantly closes the software |
 
 ---
@@ -233,11 +233,11 @@ Press **Delete** at any time to immediately close the software. A dedicated watc
 </Accordion>
 
 <Accordion title="Driver Initialization Failed">
-  Repeat the Windows Defender step, then relaunch. The exe auto-cycles the ZDrv service to clear a stale kernel channel. If it still fails, restart Windows.
+  Repeat the Windows Defender step, then relaunch. The exe auto-cycles the mouse-driver service to clear a stale channel. If it still fails, restart Windows.
 </Accordion>
 
 <Accordion title="After a long time since last open, PC restart required">
-  The ZDrv kernel channel can go stale while the service still reports running. The exe auto-recovers by cycling the service without a reboot — just launch it again.
+  The driver channel can go stale between runs. The exe auto-recovers without a reboot — just launch it again.
 </Accordion>
 
 <Accordion title="Triggerbot will not fire">

@@ -5,7 +5,7 @@ description: "FlickLabz Rainbow Six Siege AIO — full setup guide"
 icon: "bullseye"
 ---
 
-Full setup guide for the FlickLabz R6 **AIO** (all-in-one) package. The AIO is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window and uses a signed kernel-level mouse driver (ZDrv) for mouse movement. Follow each step in order.
+Full setup guide for the FlickLabz R6 **AIO** (all-in-one) package. The AIO is a fully **external** program — it does **not** inject into Rainbow Six Siege. It runs alongside the game as its own window and uses a signed kernel-level mouse driver for mouse movement. Follow each step in order.
 
 ## Pre-Setup Instructions
 
@@ -66,7 +66,7 @@ Download the latest FlickLabz R6 AIO from your dashboard.
 
 ### Step 2: Run as Administrator
 
-Right-click `FlickLabz R6 AIO.exe` → **Run as administrator**. Elevation is required so the ZDrv kernel driver can be installed and started.
+Right-click `FlickLabz R6 AIO.exe` → **Run as administrator**. Elevation is required so the kernel-level mouse driver can be installed and started.
 
 ### Step 3: Sign In
 
@@ -211,7 +211,7 @@ Press **Delete** at any time to immediately close the software and all its featu
 </Accordion>
 
 <Accordion title="After a long time since last open, it will not launch">
-  The ZDrv kernel channel can go stale while the service still reports running. Launch the exe again — it auto-recovers by cycling the service without a reboot. If it still fails, restart Windows.
+  The driver channel can go stale between runs. Launch the exe again — it auto-recovers without a reboot on most machines. If it still fails, restart Windows.
 </Accordion>
 
 <Accordion title="Menu opens but clicks hit the game">
